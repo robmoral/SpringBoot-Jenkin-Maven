@@ -1,0 +1,8 @@
+<script>
+    var evtSource = new EventSource("http://localhost:9090/users");
+    evtSource.onmessage = function (event) {
+		console.log(event.data);
+    }
+</script>
+<table id='users'>
+</table>
